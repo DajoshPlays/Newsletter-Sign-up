@@ -7,17 +7,22 @@ body{
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     background-color: hsl(234, 29%, 20%);
-}
-main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+main{
     background-color: #ffffff;
+    width: 60%;
+    margin: 0 auto;
 }
 img{
     max-width: 100%;
     display: block;
     height: auto;
+}
+.desk-img{
+    display: none;
 }
 .text-div{
     padding: 1rem 1.5rem;
@@ -57,6 +62,7 @@ img{
 .email-label{
     /* margin: 2rem auto 0 auto; */
     font-size: 0.7rem;
+    display: block;
 }
 input[type = "email"]{
     width: 100%;
@@ -71,12 +77,12 @@ input:focus {
     outline-offset: 2px; 
 }
 .error-message{
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     display: none;
     color: #d00;
 }
 .error .error-message{
-    display: block;
+    display: block
 }
 .error input[type="email"]{
     border-color: #d00;
@@ -97,4 +103,23 @@ input:focus {
 .sub-button:hover {
     background: linear-gradient(to right, #e75e7c, #fe693e);
     box-shadow: 5px 7px 40px -7px#fe693e;
+}
+
+
+
+@media (min-width: 1024px){
+    .main{
+        max-width: 500px;
+    }
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .mobile-img{
+        display: none;
+    }
+    .desk-img{
+        display: block;
+    }
 }
