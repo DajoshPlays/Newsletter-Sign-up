@@ -7,14 +7,9 @@ body{
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     background-color: hsl(234, 29%, 20%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 main{
     background-color: #ffffff;
-    width: 60%;
-    margin: 0 auto;
 }
 img{
     max-width: 100%;
@@ -108,8 +103,15 @@ input:focus {
 
 
 @media (min-width: 1024px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .main{
-        max-width: 500px;
+        /* max-width: 500px;
+        width: 10%;
+        margin: 0 auto; */
     }
     .container{
         display: flex;
