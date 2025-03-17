@@ -1,0 +1,93 @@
+body{
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.sub-button{
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-button:hover {
+    background: linear-gradient(to right, #e75e7c, #fe693e);
+    box-shadow: 5px 7px 40px -7px#fe693e;
+}
+.figure{
+    display: none;
+}
+h1{
+    color: hsl(235, 18%, 26%);
+    font-weight: 700;
+}
+#form{
+    margin-bottom: 10px;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.list-items{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.top-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 18px;
+    margin: 15px;
+}
+.input-class{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+    padding: 14px 10px;
+}
+
+
+/* Media Query for Laptop Screen  */
+@media (min-width: 768px){
+    body{
+        background-color: hsl(234, 29%, 20%);
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        width: 100%;
+        justify-content: center;
+    }
+    .figure{
+        display: flex;
+        padding: 12px;
+    }
+    .top-img{
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        border-radius: 12px;
+        margin: 50px 68px;
+    }
+    .input-class{
+       padding: 16px;
+    }
+    
+}

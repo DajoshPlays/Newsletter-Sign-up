@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation message</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/images/styles.css"> -->
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            font-family: 'Roboto';
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 52px 16px;
+            padding: 0;
+        }
+        .fluid-container{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 131px;
+        }
+        h1{
+            color: hsl(235, 18%, 26%);
+            font-weight: 700;
+        }
+        .success-text{
+            color: hsl(235, 18%, 26%);
+            font-weight: 400;
+            line-height: 1.4;
+        }
+        .success-img{
+            height: 30px;
+            width: 30px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+        }
+        .success-button{
+            background-color: hsl(234, 29%, 20%);
+            color: white;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding: 14px 74px;
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="fluid-container">
+        <img class="success-img" src="assets/images/icon-success.svg" alt="success-icon">
+        <h1 class="success-heading">Thanks for Subscribing!</h1>
+        <p class="success-text">A confirmation message has been sent to <strong>adefila44@company.com.</strong> Please open it and click the button inside to confirm your subscription.</p>
+
+    </div>
+    <div class="button">
+        <button class="success-button">Dismiss message</button>
+
+    </div>
+
+    
+    <script src="index2.js"></script>
+</body>
+</html>
