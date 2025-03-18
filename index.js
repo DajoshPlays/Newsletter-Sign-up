@@ -19,7 +19,10 @@ form.addEventListener('submit', function(event) {
     emailInput.setAttribute('aria-invalid', true)
     emailInput.focus();
   }else{
-    window.location.href = `success.html?email=${encodeURIComponent(emailValue)}`
+    // store in session storage
+    sessionStorage.setItem('subscribedEmail', emailValue)
+    // redirect to success page
+    window.location.href = 'success.html'
   }
 
 })

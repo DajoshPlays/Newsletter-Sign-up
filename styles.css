@@ -108,11 +108,11 @@ input:focus {
         justify-content: center;
         align-items: center;
     }
-    .main{
-        /* max-width: 500px;
+    /* .main{
+        max-width: 500px;
         width: 10%;
-        margin: 0 auto; */
-    }
+        margin: 0 auto;
+    } */
     .container{
         display: flex;
         flex-direction: row-reverse;
